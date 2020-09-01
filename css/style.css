@@ -1,0 +1,65 @@
+.modelscontainer div{
+			background-image: url(https://images.squarespace-cdn.com/content/v1/5a43cc897131a504e82eafef/1550455715629-EZPS8ARMEUJ048STDX14/ke17ZwdGBToddI8pDm48kMaVAccIHCAlT3ehWo7kkTtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI5LGX5yPPWxlKpI322UDuSoYYhw1mEbiv7EaGpG6cJ6IKMshLAGzx4R3EDFOm1kBS/441387-gorgerous-dark-blue-background-images-1920x1080-for-android-50.jpg?format=1500w);
+			color: white;
+			width: 27%;
+			border: 3px solid none;
+			border-radius: 20px;
+			padding:2%;
+			margin: 0.5% 0.5% 0.5% 0.5%;
+
+		}
+		/*.modelscontainer div:hover{
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQU6f05tt-Od_qvr9q8-o7BtX2-Q2YNw09RBA&usqp=CAU);
+			color: black;
+
+		}*/
+		.modelscontainer div img{
+			width: 100%;
+			border-radius: 30px;
+		}
+		/*.modelscontainer div img:hover{
+
+		}*/
+		.modelscontainer{
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			text-align: center;
+			justify-content: space-around;
+		}
+		.modelscontainer div button{
+			/*text-align: right;*/
+			border-radius: 10px;
+			padding:2%;
+			margin-right: 30px;
+			color: black;
+			background-color: khaki;
+		}
+		/*.modelscontainer div button:hover{
+			background-color: green;
+			color: white;
+		}*/
+		body{
+			background-color: grey;
+		}
+		/*queries for mobile mode
+		mobile size:min=320px and max=767px*/
+		@media only screen and (min-width: 320px) and (max-width: 767px){
+			/*body{
+				background-color: white;
+			}*/
+			.modelscontainer{
+				flex-direction: column;
+			}
+			.modelscontainer div{
+				width: 95%;
+			}
+		}
+		/*tab mode*/
+		@media only screen and (min-width: 768px) and (max-width: 1023px){
+			.modelscontainer div{
+				
+				width: 44%;
+			}
+
+		}
